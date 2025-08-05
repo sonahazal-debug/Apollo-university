@@ -1,0 +1,290 @@
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .8s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+ }
+
+ #spinner.show {
+     transition: opacity .8s ease-out, visibility 0s linear .0s;
+     visibility: visible;
+     opacity: 1;
+ }
+ html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.main-content {
+    flex: 1; /* Pushes the footer down */
+    overflow: auto; /* Prevents content from overflowing */
+}
+
+.footer-test {
+    width: 100%;
+    bottom: 0;
+}
+.btn-secondary{
+    color: white;
+}
+.btn-secondary:hover{
+    color: white;
+}
+/*** Spinner End ***/
+/*** Navbar Start ***/
+.navbar .navbar-nav {
+    padding: 15px 0;
+}
+
+.navbar .navbar-nav .nav-link {
+    padding: 10px;
+    color: var(--bs-white);
+    font-size: 18px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--bs-secondary) !important;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "font awesome 5 free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        top: 100%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+        transition: .5s;
+        opacity: 0;
+    }
+}
+
+.navbar .nav-item:hover .dropdown-menu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    transition: .5s;
+    opacity: 1;
+}
+.navbar{
+    position: static;
+}
+
+.sticky-navbar
+{
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              z-index: 1000;
+              background: var(--bs-primary);
+              padding: 10px 0;
+          }
+          .navbar-expand-lg .navbar-collapse{
+              justify-content: center;
+          }
+          .main-logo p{
+            font-size: 16px;
+            margin-bottom: 0 !important;
+          }
+/*** Navbar End ***/
+/* -----------navbar---------------- */
+.main-logo{
+    height: 45px;
+    display: flex;
+    object-fit: fill;
+    align-items: center;
+}
+.main-logo img{
+    height: 100%;
+    /* width: 100%; */
+}
+.navbar-col1{
+    text-align: center;
+}
+.navbar-col1 a {
+    color: white !important;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a soft black shadow */
+}
+
+.navbar-col2{
+    text-align: end;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: end;
+}
+.navbar-col2 .quote-btn{
+    height: fit-content;
+}
+.navbar-col2-img{
+    height: 50px;
+    display: flex;
+    object-fit: fill;
+    width: 100px;
+
+}
+.navbar-col2-img img{
+    height: 100%;
+    /* width: 100%; */
+    border-radius: 50px;
+}
+.navbar{
+    display: contents;
+    align-items: center;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+}
+.buttons-test{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.buttons-test .btn-primary:hover{
+    background-color: rgb(0, 89, 255);
+}
+.buttons-test .btn-secondary{
+    background-color: grey;
+    color: white;
+    border: none;
+}
+.buttons-test .btn{
+    border-radius: 10px;
+    height: fit-content;
+}
+.btn-secondary:hover{
+    background-color: rgb(66, 65, 64);
+}
+.score-buttons{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.score-buttons .score-number-text{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.score-number-text .btn-primary:hover{
+    background-color: rgb(24, 84, 211);
+    border: none;
+ 
+}
+.score-number-text .btn-secondary{
+    background-color: grey;
+    color: white;
+    border: none;
+}
+.score-number-text .btn-secondary:hover{
+    background-color: rgb(101, 98, 95);
+}
+.score-number-text .score {
+    display: flex;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    /* background-color: green; */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+}
+.question-marks{
+    display: flex;
+    align-items: center;
+}
+.question-marks .question-number{
+    justify-content: start;
+}
+.question-number h6{
+    text-align: left;
+    color: black;
+}
+.marks-obtain {
+    text-align: right;
+    justify-content: end;
+}
+.marks-obtain h6{
+    align-items: end;
+    text-align: end;
+    color: black;
+}
+.qstns .score-number-text .score{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    font-size: 12px;
+}
+.qstn-submit{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.footer-test{
+    background-color: rgb(209, 213, 213);
+
+    bottom: 0;
+}
+.footer-test .btn-secondary{
+    background-color: grey;
+    color: white;
+    border: none;
+}
+.footer-test .btn-secondary:hover{
+    background-color: rgb(83, 81, 81);
+}
+/* .first-col{
+    border-right: 1px solid grey;
+} */
+@media (max-width:768px) {
+    .main-logo{
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .navbar-col2{
+        text-align: end;
+    }
+    .navbar-col1{
+        text-align: start;
+    }
+    .buttons-test{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .first-main-row{
+        flex-direction: column-reverse;
+    }
+    .footer-test .buttons-test .btn{
+        font-size: 12px;
+    }
+}
+
+
+.gapi {
+    gap:10px !important;
+}

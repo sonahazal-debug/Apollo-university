@@ -1,0 +1,42 @@
+.top-headings{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+table {
+    border: 1px solid grey;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid grey;
+    padding: 10px;
+    text-align: center;
+}
+.table-container{
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: repeat(2,1fr);
+}
+.table-container table{
+    width: fit-content;
+  
+}
+.table-container table tbody tr{
+    border: 1px solid black;
+}
+.table-container table tbody tr td{
+    padding: 10px;
+    border: 1px solid black;
+
+}
+.scores span{
+    font-size: 16px;
+    font-weight: bold;
+    color: grey;
+}
+.result{
+    color: rgb(71, 71, 71);
+}

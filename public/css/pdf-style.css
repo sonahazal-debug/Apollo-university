@@ -1,0 +1,126 @@
+
+
+
+ body {
+    font-family: DejaVu Sans, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.key-sheet {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-key-logo img {
+    height: 60px;
+}
+
+.brand-name h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.name-date {
+    font-size: 18px;
+    margin-bottom: 10px;
+    overflow: hidden; /* clears floats */
+}
+
+.examName,
+.dateTime {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+}
+
+.examName {
+    float: left;
+    text-align: left;
+}
+
+.dateTime {
+    float: right;
+    text-align: right;
+}
+
+.examName h3,
+.dateTime h3 {
+    margin: 0;
+}
+
+.examName span,
+.dateTime span {
+    color: blue;
+    font-weight: bold;
+}
+
+
+.examName span,
+.date span,
+.time span {
+    color: blue;
+}
+
+
+.examName h3,
+.date h3,
+.time h3 {
+    margin: 0;
+}
+
+.examName span,
+.date span,
+.time span {
+    color: blue;
+}
+
+.key-heading {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.qst-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+
+    gap:10px;
+    box-shadow: 1px 0px 21px 0px grey;
+    border-radius: 20px;
+    /* Simulate box shadow for dompdf */
+    /* box-shadow: 1px 0px 21px 0px grey; */
+}
+
+h3{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.question h4{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.options {
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.options span {
+    display: inline-block;
+
+    font-size: 16px;
+}
+
+.answer h5{
+    font-size: 18px;
+    font-weight: bold;
+    color: darkgreen;
+}
+
